@@ -1,4 +1,4 @@
-FROM python:3.6-slim-jessie
+FROM python:3.6-slim-stretch
 MAINTAINER Matthew Landauer <matthew@oaf.org.au>
 
 # We're install python on its own first so that when we install python-pip
