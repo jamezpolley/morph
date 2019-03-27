@@ -49,5 +49,5 @@ RUN rm -rf /var/lib/{apt,dpkg,cache,log}
 # TODO: Don't run as root
 
 COPY mitmproxy /mitmproxy
-CMD ["mitmdump", "--mode", "transparent", "--showhost", "--script", "/mitmproxy/log_to_morph.py", "--certs", "/mitmproxy/mitmproxy-ca.pem"]
+CMD ["mitmdump", "--confdir", "/mitmproxy", "--mode", "transparent", "--showhost"]
 EXPOSE 8080

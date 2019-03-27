@@ -1,3 +1,4 @@
+g#!/usr/bin/env python
 # Run this with dotenv mitmdump -q -a -s mitmproxy/log_to_morph.py --confdir mitmproxy
 
 import urllib
